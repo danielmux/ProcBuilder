@@ -8,6 +8,23 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ProcBuilderDocument : NSPersistentDocument
+@class DMXProcController;
+@class DMXProgramController;
+@class DMXRegisterController;
+@class DMXDataController;
+
+@class DMXDatapath;
+
+
+@interface ProcBuilderDocument : NSPersistentDocument {
+    IBOutlet DMXProcController *procController;
+    IBOutlet DMXProgramController *programController;
+    IBOutlet DMXRegisterController *registerController;
+    IBOutlet DMXDataController *dataController;
+    
+    IBOutlet NSTableView *stageTableView;
+    
+    DMXDatapath *datapath;
+}
 
 @end

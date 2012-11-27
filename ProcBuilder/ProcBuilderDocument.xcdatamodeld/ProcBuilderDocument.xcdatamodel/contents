@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Data" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Datapath" representedClassName="DMXDatapath" syncable="YES">
+        <attribute name="datapathId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="execute1" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" inverseName="datapath" inverseEntity="Stage" syncable="YES"/>
+        <relationship name="execute2" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" inverseName="datapath" inverseEntity="Stage" syncable="YES"/>
+        <relationship name="instructionDecode" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" inverseName="datapath" inverseEntity="Stage" syncable="YES"/>
+        <relationship name="instructionFetch" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" inverseName="datapath" inverseEntity="Stage" syncable="YES"/>
+        <relationship name="memoryAccess" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" inverseName="datapath" inverseEntity="Stage" syncable="YES"/>
+        <relationship name="writeBack" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" inverseName="datapath" inverseEntity="Stage" syncable="YES"/>
+    </entity>
+    <entity name="Instruction" representedClassName="DMXInstruction" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="branchAddress" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="immediate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opCode" attributeType="String" syncable="YES"/>
+        <attribute name="stage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="regD" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Register" inverseName="writer" inverseEntity="Register" syncable="YES"/>
+        <relationship name="regS" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Register" syncable="YES"/>
+        <relationship name="regT" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Register" syncable="YES"/>
+    </entity>
+    <entity name="Register" representedClassName="DMXRegister" syncable="YES">
+        <attribute name="registerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="writer" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Instruction" inverseName="regD" inverseEntity="Instruction" syncable="YES"/>
+    </entity>
+    <entity name="Stage" representedClassName="DMXStage" syncable="YES">
+        <attribute name="stageId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="datapath" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Datapath" inverseName="writeBack" inverseEntity="Datapath" syncable="YES"/>
+        <relationship name="instruction" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Instruction" syncable="YES"/>
+        <relationship name="nextStage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Stage" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Instruction" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="Register" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Stage" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Datapath" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="Data" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
 </model>

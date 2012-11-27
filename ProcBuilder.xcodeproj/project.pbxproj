@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D85B24A5164AB92F00750335 /* DMXDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85B24A4164AB92F00750335 /* DMXDataController.m */; };
+		D871D3071641DB37002F4776 /* DMXInstructionIType.m in Sources */ = {isa = PBXBuildFile; fileRef = D871D3061641DB37002F4776 /* DMXInstructionIType.m */; };
+		D871D30B16431DD9002F4776 /* DMXInstructionJType.m in Sources */ = {isa = PBXBuildFile; fileRef = D871D30A16431DD9002F4776 /* DMXInstructionJType.m */; };
+		D891B76E163E63CC00F239CA /* DMXInstructionRType.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B76D163E63CC00F239CA /* DMXInstructionRType.m */; };
+		D891B771163E642C00F239CA /* DMXRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B770163E642C00F239CA /* DMXRegister.m */; };
+		D891B77D1640CB4E00F239CA /* DMXInstructionFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B77C1640CB4E00F239CA /* DMXInstructionFetch.m */; };
+		D891B7801640CD6100F239CA /* DMXInstructionDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B77F1640CD6100F239CA /* DMXInstructionDecode.m */; };
+		D891B7831640CDB300F239CA /* DMXExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B7821640CDB300F239CA /* DMXExecute.m */; };
+		D891B7861640CDE200F239CA /* DMXMemoryAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B7851640CDE200F239CA /* DMXMemoryAccess.m */; };
+		D891B7891640CDFD00F239CA /* DMXWriteBack.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B7881640CDFD00F239CA /* DMXWriteBack.m */; };
 		D8979A03162E106200D66702 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8979A02162E106200D66702 /* Cocoa.framework */; };
 		D8979A0D162E106200D66702 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8979A0B162E106200D66702 /* InfoPlist.strings */; };
 		D8979A0F162E106200D66702 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A0E162E106200D66702 /* main.m */; };
@@ -15,9 +25,35 @@
 		D8979A19162E106200D66702 /* ProcBuilderDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8979A17162E106200D66702 /* ProcBuilderDocument.xib */; };
 		D8979A1C162E106200D66702 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8979A1A162E106200D66702 /* MainMenu.xib */; };
 		D8979A1F162E106200D66702 /* ProcBuilderDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8979A1D162E106200D66702 /* ProcBuilderDocument.xcdatamodeld */; };
+		D8979A341630CAAA00D66702 /* DMXProcController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A331630CAA900D66702 /* DMXProcController.m */; };
+		D8979A3A163611C500D66702 /* DMXProgramController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A39163611C500D66702 /* DMXProgramController.m */; };
+		D8979A3D1637A9CB00D66702 /* DMXRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A3C1637A9CB00D66702 /* DMXRegisterController.m */; };
+		D8979A401638F7F200D66702 /* DMXInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A3F1638F7F200D66702 /* DMXInstruction.m */; };
+		D8979A431638F8A100D66702 /* DMXStage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A421638F8A100D66702 /* DMXStage.m */; };
+		D8979A461638F91200D66702 /* DMXDatapath.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979A451638F91200D66702 /* DMXDatapath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D85B24A3164AB92F00750335 /* DMXDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXDataController.h; sourceTree = "<group>"; };
+		D85B24A4164AB92F00750335 /* DMXDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXDataController.m; sourceTree = "<group>"; };
+		D871D3051641DB37002F4776 /* DMXInstructionIType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXInstructionIType.h; sourceTree = "<group>"; };
+		D871D3061641DB37002F4776 /* DMXInstructionIType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXInstructionIType.m; sourceTree = "<group>"; };
+		D871D30916431DD8002F4776 /* DMXInstructionJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXInstructionJType.h; sourceTree = "<group>"; };
+		D871D30A16431DD9002F4776 /* DMXInstructionJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXInstructionJType.m; sourceTree = "<group>"; };
+		D891B76C163E63CC00F239CA /* DMXInstructionRType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXInstructionRType.h; sourceTree = "<group>"; };
+		D891B76D163E63CC00F239CA /* DMXInstructionRType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXInstructionRType.m; sourceTree = "<group>"; };
+		D891B76F163E642C00F239CA /* DMXRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXRegister.h; sourceTree = "<group>"; };
+		D891B770163E642C00F239CA /* DMXRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXRegister.m; sourceTree = "<group>"; };
+		D891B77B1640CB4E00F239CA /* DMXInstructionFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXInstructionFetch.h; sourceTree = "<group>"; };
+		D891B77C1640CB4E00F239CA /* DMXInstructionFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXInstructionFetch.m; sourceTree = "<group>"; };
+		D891B77E1640CD6100F239CA /* DMXInstructionDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXInstructionDecode.h; sourceTree = "<group>"; };
+		D891B77F1640CD6100F239CA /* DMXInstructionDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXInstructionDecode.m; sourceTree = "<group>"; };
+		D891B7811640CDB300F239CA /* DMXExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXExecute.h; sourceTree = "<group>"; };
+		D891B7821640CDB300F239CA /* DMXExecute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXExecute.m; sourceTree = "<group>"; };
+		D891B7841640CDE200F239CA /* DMXMemoryAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXMemoryAccess.h; sourceTree = "<group>"; };
+		D891B7851640CDE200F239CA /* DMXMemoryAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXMemoryAccess.m; sourceTree = "<group>"; };
+		D891B7871640CDFD00F239CA /* DMXWriteBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXWriteBack.h; sourceTree = "<group>"; };
+		D891B7881640CDFD00F239CA /* DMXWriteBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXWriteBack.m; sourceTree = "<group>"; };
 		D89799FE162E106200D66702 /* ProcBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8979A02162E106200D66702 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8979A05162E106200D66702 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -33,6 +69,18 @@
 		D8979A18162E106200D66702 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ProcBuilderDocument.xib; sourceTree = "<group>"; };
 		D8979A1B162E106200D66702 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D8979A1E162E106200D66702 /* ProcBuilderDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProcBuilderDocument.xcdatamodel; sourceTree = "<group>"; };
+		D8979A321630CAA900D66702 /* DMXProcController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXProcController.h; sourceTree = "<group>"; };
+		D8979A331630CAA900D66702 /* DMXProcController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXProcController.m; sourceTree = "<group>"; };
+		D8979A38163611C500D66702 /* DMXProgramController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXProgramController.h; sourceTree = "<group>"; };
+		D8979A39163611C500D66702 /* DMXProgramController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXProgramController.m; sourceTree = "<group>"; };
+		D8979A3B1637A9CB00D66702 /* DMXRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXRegisterController.h; sourceTree = "<group>"; };
+		D8979A3C1637A9CB00D66702 /* DMXRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXRegisterController.m; sourceTree = "<group>"; };
+		D8979A3E1638F7F200D66702 /* DMXInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXInstruction.h; sourceTree = "<group>"; };
+		D8979A3F1638F7F200D66702 /* DMXInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXInstruction.m; sourceTree = "<group>"; };
+		D8979A411638F8A100D66702 /* DMXStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXStage.h; sourceTree = "<group>"; };
+		D8979A421638F8A100D66702 /* DMXStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXStage.m; sourceTree = "<group>"; };
+		D8979A441638F91100D66702 /* DMXDatapath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXDatapath.h; sourceTree = "<group>"; };
+		D8979A451638F91200D66702 /* DMXDatapath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXDatapath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +95,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D871D30C16432D75002F4776 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				D8979A3E1638F7F200D66702 /* DMXInstruction.h */,
+				D8979A3F1638F7F200D66702 /* DMXInstruction.m */,
+				D891B76C163E63CC00F239CA /* DMXInstructionRType.h */,
+				D891B76D163E63CC00F239CA /* DMXInstructionRType.m */,
+				D871D3051641DB37002F4776 /* DMXInstructionIType.h */,
+				D871D3061641DB37002F4776 /* DMXInstructionIType.m */,
+				D871D30916431DD8002F4776 /* DMXInstructionJType.h */,
+				D871D30A16431DD9002F4776 /* DMXInstructionJType.m */,
+			);
+			name = Instructions;
+			sourceTree = "<group>";
+		};
+		D871D30D16432DD2002F4776 /* Datapath */ = {
+			isa = PBXGroup;
+			children = (
+				D8979A411638F8A100D66702 /* DMXStage.h */,
+				D8979A421638F8A100D66702 /* DMXStage.m */,
+				D891B77B1640CB4E00F239CA /* DMXInstructionFetch.h */,
+				D891B77C1640CB4E00F239CA /* DMXInstructionFetch.m */,
+				D891B77E1640CD6100F239CA /* DMXInstructionDecode.h */,
+				D891B77F1640CD6100F239CA /* DMXInstructionDecode.m */,
+				D891B7811640CDB300F239CA /* DMXExecute.h */,
+				D891B7821640CDB300F239CA /* DMXExecute.m */,
+				D891B7841640CDE200F239CA /* DMXMemoryAccess.h */,
+				D891B7851640CDE200F239CA /* DMXMemoryAccess.m */,
+				D891B7871640CDFD00F239CA /* DMXWriteBack.h */,
+				D891B7881640CDFD00F239CA /* DMXWriteBack.m */,
+				D8979A441638F91100D66702 /* DMXDatapath.h */,
+				D8979A451638F91200D66702 /* DMXDatapath.m */,
+			);
+			name = Datapath;
+			sourceTree = "<group>";
+		};
+		D891B7791640C56100F239CA /* Processor */ = {
+			isa = PBXGroup;
+			children = (
+				D871D30D16432DD2002F4776 /* Datapath */,
+				D871D30C16432D75002F4776 /* Instructions */,
+				D891B76F163E642C00F239CA /* DMXRegister.h */,
+				D891B770163E642C00F239CA /* DMXRegister.m */,
+			);
+			name = Processor;
+			sourceTree = "<group>";
+		};
+		D891B77A1640C6F600F239CA /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D8979A321630CAA900D66702 /* DMXProcController.h */,
+				D8979A331630CAA900D66702 /* DMXProcController.m */,
+				D8979A38163611C500D66702 /* DMXProgramController.h */,
+				D8979A39163611C500D66702 /* DMXProgramController.m */,
+				D8979A3B1637A9CB00D66702 /* DMXRegisterController.h */,
+				D8979A3C1637A9CB00D66702 /* DMXRegisterController.m */,
+				D85B24A3164AB92F00750335 /* DMXDataController.h */,
+				D85B24A4164AB92F00750335 /* DMXDataController.m */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
 		D89799F3162E106200D66702 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +196,8 @@
 		D8979A08162E106200D66702 /* ProcBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				D891B77A1640C6F600F239CA /* Control */,
+				D891B7791640C56100F239CA /* Processor */,
 				D8979A14162E106200D66702 /* ProcBuilderDocument.h */,
 				D8979A15162E106200D66702 /* ProcBuilderDocument.m */,
 				D8979A17162E106200D66702 /* ProcBuilderDocument.xib */,
@@ -177,6 +289,22 @@
 				D8979A0F162E106200D66702 /* main.m in Sources */,
 				D8979A16162E106200D66702 /* ProcBuilderDocument.m in Sources */,
 				D8979A1F162E106200D66702 /* ProcBuilderDocument.xcdatamodeld in Sources */,
+				D8979A341630CAAA00D66702 /* DMXProcController.m in Sources */,
+				D8979A3A163611C500D66702 /* DMXProgramController.m in Sources */,
+				D8979A3D1637A9CB00D66702 /* DMXRegisterController.m in Sources */,
+				D8979A401638F7F200D66702 /* DMXInstruction.m in Sources */,
+				D8979A431638F8A100D66702 /* DMXStage.m in Sources */,
+				D8979A461638F91200D66702 /* DMXDatapath.m in Sources */,
+				D891B76E163E63CC00F239CA /* DMXInstructionRType.m in Sources */,
+				D891B771163E642C00F239CA /* DMXRegister.m in Sources */,
+				D891B77D1640CB4E00F239CA /* DMXInstructionFetch.m in Sources */,
+				D891B7801640CD6100F239CA /* DMXInstructionDecode.m in Sources */,
+				D891B7831640CDB300F239CA /* DMXExecute.m in Sources */,
+				D891B7861640CDE200F239CA /* DMXMemoryAccess.m in Sources */,
+				D891B7891640CDFD00F239CA /* DMXWriteBack.m in Sources */,
+				D871D3071641DB37002F4776 /* DMXInstructionIType.m in Sources */,
+				D871D30B16431DD9002F4776 /* DMXInstructionJType.m in Sources */,
+				D85B24A5164AB92F00750335 /* DMXDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +442,7 @@
 				D8979A24162E106200D66702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,6 +7,7 @@
 //
 
 #import "ProcBuilderDocument.h"
+#import "DMXDatapath.h"
 
 @implementation ProcBuilderDocument
 
@@ -14,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        // Add your subclass-specific initialization here.
+        datapath = [[DMXDatapath alloc] init];
     }
     return self;
 }
